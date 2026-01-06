@@ -63,41 +63,6 @@ A complete, production-ready full-stack ATS Resume Checker web application that 
    npm run dev
    ```
 
-4. **Open Application**
-   Navigate to [http://localhost:3001](http://localhost:3001)
-
-## 📁 Project Structure
-
-```
-src/
-├── app/
-│   ├── api/                    # API routes
-│   │   ├── upload/            # File upload handling
-│   │   ├── analyze/           # ATS analysis endpoint
-│   │   └── report/            # PDF generation
-│   ├── page.tsx              # Main dashboard
-│   ├── layout.tsx            # Root layout
-│   └── globals.css           # Global styles
-├── components/
-│   ├── ui/                   # Reusable UI components
-│   ├── UploadCard.tsx        # File upload component
-│   ├── JobDescription.tsx    # Job description input
-│   ├── ScoreGauge.tsx        # Animated score display
-│   ├── ResultCard.tsx        # Analysis results
-│   ├── KeywordList.tsx       # Keyword matching display
-│   ├── SuggestionsList.tsx   # Improvement suggestions
-│   ├── Navbar.tsx            # Navigation header
-│   └── Footer.tsx            # Footer component
-├── lib/
-│   ├── types.ts              # TypeScript definitions
-│   ├── utils.ts              # Utility functions
-│   └── constants.ts          # App constants
-└── hooks/
-    ├── useFileUpload.ts       # File upload logic
-    ├── useATSAnalysis.ts      # Analysis state management
-    └── useReportGeneration.ts # PDF report logic
-```
-
 ## 🧠 How It Works
 
 ### 1. Resume Processing
@@ -135,35 +100,6 @@ Perform ATS analysis using AI.
 ### POST `/api/report`
 Generate PDF report from analysis data.
 
-## 🎨 Key Components
-
-### UploadCard
-- Drag-and-drop file upload with visual feedback
-- File type and size validation
-- Progress indicators and error handling
-
-### ScoreGauge
-- Animated circular progress indicator
-- Color-coded score ranges
-- Smooth animations and transitions
-
-### ResultCard
-- Comprehensive analysis breakdown
-- Interactive progress bars
-- Detailed scoring explanations
-
-### KeywordList
-- Matched vs missing keywords display
-- Filterable and searchable interface
-- Copy-to-clipboard functionality
-
-## 🔒 Security Features
-
-- **Input Validation**: Server-side validation for all inputs
-- **File Type Security**: Only allowed file types accepted
-- **File Size Limits**: Prevents abuse with size restrictions
-- **Error Handling**: Comprehensive error responses without sensitive information
-
 ## 🚀 Deployment
 
 ### Vercel (Recommended)
@@ -183,25 +119,6 @@ Generate PDF report from analysis data.
 - **File Size Limits**: Efficient file processing
 - **Response Caching**: AI analysis results cached
 - **Optimized Bundling**: Split code for optimal loading
-
-## 🧪 Testing
-
-### Manual Testing Checklist
-
-#### ✅ Complete ATS Analysis Flow
-1. Upload a PDF resume file
-2. Paste a job description
-3. Submit for analysis
-4. Verify ATS score appears
-5. Check keyword matching results
-6. Review suggestions list
-7. Generate PDF report
-
-#### ✅ File Upload Validation
-1. Try uploading invalid file types (JPG, TXT)
-2. Try uploading oversized files
-3. Test drag-and-drop functionality
-4. Test file removal before analysis
 
 ## 🔮 Future Enhancements
 
@@ -233,10 +150,6 @@ Generate PDF report from analysis data.
 **Build Issues**
 - Clear Next.js cache: `rm -rf .next`
 - Update dependencies: `npm install`
-
-## 📄 License
-
-This project is licensed under the MIT License.
 
 ---
 
